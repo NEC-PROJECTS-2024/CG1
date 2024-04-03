@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake profile detection</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="container">
+        <header>FAKE PROFILE DETECTION</header>
+        <form action="{{ url_for('predict') }}" method="post">
+            <div class="form first">
+
+                <div class="input-fields">
+                    <label >Statuses Count</label>
+                    <input type="number" name="statuses_count" placeholder="No Following,enter 0" required>
+                </div>
+                <div class="input-fields">
+                    <label >Followers</label>
+                    <input type="number" name="followers_count" placeholder="No followers,enter 0" required>
+                </div>
+                        <div class="input-fields">
+                            <label >Following</label>
+                            <input type="number" name="friends_count" placeholder="No Following,enter 0" required>
+                        </div>
+                        <div class="input-fields">
+                            <label >Listed Count</label>
+                            <input type="number" name="listed_count" placeholder="how many post in that profile" required>
+                        </div>
+                        <div class="input-fields">
+                            <label >Favourites</label>
+                            <input type="number" name="favourites_count" placeholder="how many post in that profile" required>
+                        </div>
+                        
+
+                        <div class="input-fields">
+                            <label >Language</label>
+                            <select name="lang" required>
+                                <option value="1">english</option>
+                                <option value="0">other</option>
+                            </select>
+                        </div>
+                        <div class="input-fields">
+                            <label >Default profile</label>
+                            <select name="default_profile" required>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+                        <div class="input-fields">
+                            <label >Profile use background image</label>
+                            <select name="profile_use_background_image" required>
+                                <option value="1">Image present</option>
+                                <option value="0">Image not present</option>
+                            </select>
+                        </div>
+                        <button class="nextbtn">
+                            <span class="btnText">predict</span>
+                            
+                        </button>
+                    </div>
+                
+                
+            
+        </form>
+        <span>
+        <div> <center>{{prediction_text}}</center></div>
+    </span>
+    </div>
+
+    
+</body>
+</html>
