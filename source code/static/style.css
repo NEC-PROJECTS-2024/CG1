@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    text-decoration: none;
+    margin-left: 30%;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+body {
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    min-height:100vh;
+    background-image: url("../static/image.jpg.jpeg");
+    background-position: center;
+
+}
+
+.container {
+    position: relative;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    box-shadow: 0 5px 10px rgba(241, 233, 233, 0.852);
+
+    
+}
+
+
+.container form {
+    position: relative;
+    margin-top: 16px;
+}
+
+.container form .form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust spacing between fields */
+}
+
+.input-fields {
+    flex: 0 0 calc(50% - 10px); /* Adjust width of input fields */
+}
+
+
+.input-fields label {
+    font-size: 18px; /* Adjust font size */
+    font-weight: 500;
+    color: #2e2e2e;
+    margin-bottom: 5px; /* Adjust spacing */
+    padding: 20px;
+}
+
+.input-fields input,
+.input-fields select {
+    position: relative;
+    height: 40px;
+    width: 75%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+
+}
+.input-fields input:hover{
+    background: rgb(5, 5, 5);
+    border: 2px solid #35aac5;
+}
+
+.input-fields select:hover{
+    background: rgb(5, 5, 5);
+    border: 2px solid #35aac5;
+}
+
+
+.input-fields input:focus,
+.input-fields input:valid,
+.input-fields select:focus,
+.input-fields select:valid {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .13);
+}
+
+.container form button {
+    height: 40px; /* Adjust height */
+    max-width: 100%; /* Adjust width */
+    font-size: 16px; /* Adjust font size */
+}
+
+.container form .nextbtn {
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    padding: 10px ;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-left: 30%;
+    height:35%;
+    width:25%;
+    cursor: pointer;
+    
+}
+.container form .nextbtn:hover{
+    background: rgb(5, 5, 5);
+    border: 2px solid #35aac5;
+}
+

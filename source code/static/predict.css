@@ -1,0 +1,9 @@
+body {
+    background-image: url(../static/background_black.avif);
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    font-size: 2 rem;
+    font-weight: bold;
+}
