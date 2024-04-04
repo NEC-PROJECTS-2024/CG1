@@ -14,4 +14,4 @@ In today's world, social media is an essential component of everyone's social li
 ### Dataset
 https://www.kaggle.com/datasets/whoseaspects/genuinefake-user-profile-dataset
 ### Deployment
-Link- http://13.50.243.144:3000/
+Link- http://16.171.113.174:5050/
